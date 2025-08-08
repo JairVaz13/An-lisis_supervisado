@@ -14,8 +14,11 @@ Aprendizaje No Supervisado/
     requirements.txt
     graficas/
       clusters.png
-ejemplos/
-  clasificacion/
+  02_texto/
+    noticias.csv
+    noticias_entrnamiento.py
+    modelo_entrenado.pkl
+clasificacion/
     train.py
 ```
 
@@ -26,8 +29,14 @@ Instala las dependencias necesarias ejecutando:
 ```sh
 pip install -r "Aprendizaje No Supervisado/01_kmeans/requirements.txt"
 ```
+Para el análisis de texto, también necesitas:
+```sh
+pip install pandas nltk scikit-learn joblib
+```
 
 ## Aprendizaje No Supervisado
+
+### Segmentación de clientes (KMeans)
 
 En la carpeta [`Aprendizaje No Supervisado/01_kmeans`](Aprendizaje%20No%20Supervisado/01_kmeans):
 
@@ -35,7 +44,7 @@ En la carpeta [`Aprendizaje No Supervisado/01_kmeans`](Aprendizaje%20No%20Superv
 - [`agrupacion.py`](Aprendizaje%20No%20Supervisado/01_kmeans/agrupacion.py): Usa el modelo entrenado para predecir el cluster de nuevos datos.
 - [`clientes_entrenamiento.csv`](Aprendizaje%20No%20Supervisado/01_kmeans/clientes_entrenamiento.csv): Datos de entrenamiento.
 
-### Ejecución
+#### Ejecución
 
 Para entrenar el modelo y generar la gráfica:
 
@@ -50,16 +59,30 @@ Para predecir el cluster de nuevos clientes:
 python agrupacion.py
 ```
 
+### Agrupamiento de noticias por texto
+
+En la carpeta [`Aprendizaje No Supervisado/02_texto`](Aprendizaje%20No%20Supervisado/02_texto):
+
+- [`noticias.csv`](Aprendizaje%20No%20Supervisado/02_texto/noticias.csv): Archivo con noticias (solo columna `Noticia`).
+- [`noticias_entrnamiento.py`](Aprendizaje%20No%20Supervisado/02_texto/noticias_entrnamiento.py): Agrupa noticias por similitud de texto usando KMeans y muestra los resultados ordenados por cluster.
+
+#### Ejecución
+
+```sh
+cd "Aprendizaje No Supervisado/02_texto"
+python noticias_entrnamiento.py
+```
+
 ## Aprendizaje Supervisado
 
-En la carpeta [`ejemplos/clasificacion`](ejemplos/clasificacion):
+En la carpeta [`clasificacion`](ejemplos/clasificacion):
 
 - [`train.py`](ejemplos/clasificacion/train.py): Ejemplo de clasificación usando regresión logística.
 
 ### Ejecución
 
 ```sh
-cd ejemplos/clasificacion
+cd clasificacion
 python train.py
 ```
 
