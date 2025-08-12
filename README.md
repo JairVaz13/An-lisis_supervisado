@@ -90,3 +90,63 @@ python train.py
 
 - Los modelos y gráficos generados se guardan automáticamente en sus respectivas carpetas.
 - Asegúrate de tener Python 3.7+ instalado.
+
+# Spider-Man Sentiment Analysis Project 🕷️
+
+## Descripción 📄
+
+Este proyecto realiza **análisis de sentimientos** sobre comentarios relacionados con Spider-Man (películas, actores, videojuegos, cómics) utilizando tres enfoques diferentes:
+
+1. **Modelo supervisado** (Naive Bayes) entrenado con un dataset específico
+2. **Análisis léxico** (VADER) basado en diccionario de palabras
+3. **Modelo Transformer** (BETO para español) de última generación
+
+## Características principales ✨
+
+- 🎯 **Análisis por aspectos**: Detecta menciones a actores, películas, trajes, etc.
+- 📊 **Visualización comparativa**: Gráficos que muestran resultados de los diferentes métodos
+- 🤖 **Tecnologías avanzadas**: Combina modelos tradicionales con transformers
+- 🕷️ **Temática especializada**: Optimizado para contenido sobre Spider-Man
+
+## Requisitos 📋
+
+```bash
+pip install pandas numpy scikit-learn nltk matplotlib transformers torch
+```
+
+## Cómo usar 🚀
+
+1. Clona el repositorio
+2. Descarga el dataset `spiderman_comentarios.csv`
+3. Ejecuta:
+
+```bash
+python analizador_spiderman.py
+```
+
+4. Ingresa tus comentarios cuando se solicite
+
+## Estructura de archivos 📂
+
+```
+spiderman-sentiment-analysis/
+├── analizador_spiderman.py    # Código principal
+└──spiderman_comentarios.csv  # Dataset de entrenamiento
+```
+
+## Ejemplos de comentarios para probar 💡
+
+```python
+"Tom Holland dio vida al Peter Parker perfecto"
+"Las escenas de acción en No Way Home son increíbles"
+"El traje negro de Spider-Man 3 era innecesario"
+"Los DLCs del juego de PS4 merecían más contenido"
+```
+
+## Licencia 📜
+
+MIT License - JairVaz13
+
+---
+
+**"Un gran poder conlleva una gran responsabilidad"** - Tío Ben
