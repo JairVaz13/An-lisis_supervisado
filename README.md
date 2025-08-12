@@ -20,6 +20,9 @@ Aprendizaje No Supervisado/
     modelo_entrenado.pkl
 clasificacion/
     train.py
+Análisis de Sentimientos sobre Spider-Man/
+    analizador_spiderman.py
+    spiderman_comentarios.csv
 ```
 
 ## Requisitos
@@ -91,7 +94,7 @@ python train.py
 - Los modelos y gráficos generados se guardan automáticamente en sus respectivas carpetas.
 - Asegúrate de tener Python 3.7+ instalado.
 
-# Spider-Man Sentiment Analysis Project 🕷️
+# Análisis de Sentimientos sobre Spider-Man Project 🕷️
 
 ## Descripción 📄
 
@@ -129,7 +132,7 @@ python analizador_spiderman.py
 ## Estructura de archivos 📂
 
 ```
-spiderman-sentiment-analysis/
+Análisis de Sentimientos sobre Spider-Man/
 ├── analizador_spiderman.py    # Código principal
 └──spiderman_comentarios.csv  # Dataset de entrenamiento
 ```
