@@ -134,7 +134,7 @@ python analizador_spiderman.py
 ```
 Análisis de Sentimientos sobre Spider-Man/
 ├── analizador_spiderman.py    # Código principal
-└──spiderman_comentarios.csv  # Dataset de entrenamiento
+└── spiderman_comentarios.csv  # Dataset de entrenamiento
 ```
 
 ## Ejemplos de comentarios para probar 💡
